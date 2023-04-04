@@ -21,11 +21,11 @@
             <li>Cat Nip</li>
             <li>Mastigar tudo</li>
             <li>Lasanha</li>
-            <ul>
-                <figure>
-                    <img src="/fundamentos-web/img/lasanha.jpg" alt="Lasanha">
-                    <figcaption>Gatos <i>amam</i> lasanhas</figcaption>
-                </figure>
+        </ul>
+        <figure>
+            <img src="/fundamentos-web/img/lasanha.jpg" alt="Lasanha">
+            <figcaption>Gatos <i>amam</i> lasanhas</figcaption>
+        </figure>
     </section>
     <section>
         <h2>Coisas que gatos <b>odeiam</b></h2>
@@ -43,14 +43,16 @@
         <h2>Sobre o seu Gato:</h2>
         <fieldset>
             <legend>Seu gato é mais de ficar em casa ou na rua?</legend>
-            <label for="casa"><input id="casa" type="radio" value="indoor" checked> Casa</label>
-            <label for="rua"><input id="rua" type="radio" value="outdoor"> Rua</label>
+            <label for="casa"><input name="c" id="casa" type="radio" value="casa" checked>Casa</label>
+            <label for="rua"><input name="c" id="rua" type="radio" value="rua">Rua</label>
         </fieldset>
         <fieldset>
             <legend>Qual a personalidade do seu gato?</legend>
-            <label for="amoroso"><input id="amoroso" type="checkbox" value="amoroso" checked> Amoroso</label>
-            <label for="maluquinho"><input id="maluquinho" type="checkbox" value="maluquinho"> Maluquinho</label>
-            <label for="preguiçoso"><input id="preguiçoso" type="checkbox" value="preguiçoso"> Preguiçoso</label>
+            <label for="amoroso"><input id="amoroso" type="checkbox" value="amoroso" name="a" checked> Amoroso</label>
+            <label for="maluquinho"><input id="maluquinho" type="checkbox" value="maluquinho" name="a">
+                Maluquinho</label>
+            <label for="preguiçoso"><input id="preguiçoso" type="checkbox" value="preguiçoso" name="a">
+                Preguiçoso</label>
         </fieldset>
         <input id="fotogato" type="text" placeholder="Link da foto do seu Gato">
         <button type="submit">Enviar</button>
