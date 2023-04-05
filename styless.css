@@ -1,0 +1,110 @@
+/* Estilos do body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos do header */
+.header {
+    background-color: #fff;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+.nav-lis {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav-lis li {
+    margin-right: 20px;
+}
+
+.nav-lis li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-lis li a:hover {
+    color: #0080ff;
+}
+
+/* Estilos do nyah */
+#nyah {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos do titulo */
+#titulo {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 36px;
+    color: #0080ff;
+}
+
+/* Estilos da seção de gatos */
+.fotogatos {
+    margin: 40px auto;
+    max-width: 800px;
+}
+
+.fotogatos h2 {
+    font-size: 24px;
+    color: #0080ff;
+    text-align: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+
+.galeria img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos das listas */
+section ul,
+section ol {
+    max-width: 800px;
+    margin: 40px auto;
+    font-size: 24px;
+    color: #0080ff;
+    text-align: center;
+}
+
+section ul li,
+section ol li {
+    margin: 10px 0;
+}
+
+/* Estilos das figuras */
+.figura {
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.figura img {
+    max-width: 100%;
+    height: auto;
+}
+
+.figura figcaption {
+    font-style: italic;
+    margin-top: 10px;
+    color: #666;
+}

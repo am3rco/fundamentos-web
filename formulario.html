@@ -13,6 +13,28 @@
     <section>
         <h2>Sobre o seu Gato:</h2>
         <fieldset>
+            <legend>Sobre o seu gatinho</legend>
+            <label for="nome">Nome do seu gato:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade do seu gato:</label>
+            <input type="number" id="idade" name="idade" min="0" max="30" required>
+
+            <label for="raca">Raça do seu gato:</label>
+            <input type="text" id="raca" name="raca" required>
+
+            <label for="cor">Cor do seu gato:</label>
+            <input type="text" id="cor" name="cor" required>
+
+            <label for="alimentacao">Qual a alimentação do seu gato?</label>
+            <select id="alimentacao" name="alimentacao" required>
+                <option value="">Selecione uma opção</option>
+                <option value="Ração seca">Ração seca</option>
+                <option value="Ração úmida">Ração úmida</option>
+                <option value="Ração caseira">Ração caseira</option>
+            </select>
+        </fieldset>
+        <fieldset>
             <legend>Seu gato é mais de ficar em casa ou na rua?</legend>
             <label for="casa"><input name="c" id="casa" type="radio" value="casa" checked>Casa</label>
             <label for="rua"><input name="c" id="rua" type="radio" value="rua">Rua</label>
