@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styless.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-rYHRPxHG5hqYmF3q3qz5Q5PaQqg3IcX2P+nRLzDIsG/+OG+0rjHNcCXa78VTqb1+"
+      crossorigin="anonymous"
+    />
     <title>Gatos Fofos</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <header class="header">
-        <nav id="navbar" class="navbar">
-            <ul class="nav-lis">
-                <li><a href="index.html" target="_blank" title>Página Inicial</a></li>
-                <li><a href="formulario.html" target="_blank">Questinário sobre o seu Gatinho</a></li>
-                <li><a href="contato.html">Entre em Contato</a></li>
-            </ul>
-        </nav>
+      <div id="navbar" class="navbar">
+        <ul class="links">
+          <li><a href="index.html" target="_blank" title>Página Inicial</a></li>
+          <li>
+            <a href="formulario.html" target="_blank"
+              >Questinário sobre o seu Gatinho</a
+            >
+          </li>
+          <li><a href="contato.html">Entre em Contato</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-cat"></i>
+        </div>
+        <img
+          id="nyah"
+          src="/fundamentos-web/img/nyancat.gif"
+          alt="Imagem de um gato torrada num arco-iris"
+        />
+      </div>
     </header>
-    <img id="nyah" src="/fundamentos-web/img/nyancat.gif" alt="Imagem de um gato torrada num arco-iris">
-    <h1 id="titulo">Gatos Fofos</h1>
-    <section class="fotogatos">
+
+    <main>
+      <section class="photocat">
+        <h1 id="title">Gatos Fofos</h1>
         <h2>Sessão de Gatos Folgados</h2>
         <div class="galeria">
-            <img src="/fundamentos-web/img/gatodorminhoco.webp" alt="gato dormindo">
-            <img src="/fundamentos-web/img/gatohappy.webp" alt="gato pulando de felicidade">
-            <img src="/fundamentos-web/img/gatobanana.jpg" alt="dois gatos bananas">
-            <img src="/fundamentos-web/img/gatafofa.jpg" alt="gata de bota e mochilinha">
+          <img
+            src="/fundamentos-web/img/gatodorminhoco.webp"
+            alt="gato dormindo"
+          />
+          <img
+            src="/fundamentos-web/img/gatohappy.webp"
+            alt="gato pulando de felicidade"
+          />
+          <img
+            src="/fundamentos-web/img/gatobanana.jpg"
+            alt="dois gatos bananas"
+          />
+          <img
+            src="/fundamentos-web/img/gatafofa.jpg"
+            alt="gata de bota e mochilinha"
+          />
         </div>
-    </section>
-    <section>
+      </section>
+      <section>
         <h2>Coisas que gatos <b>adoram</b></h2>
         <ul>
-            <li>Cat Nip</li>
-            <li>Mastigar tudo</li>
-            <li>Lasanha</li>
+          <li>Cat Nip</li>
+          <li>Mastigar tudo</li>
+          <li>Lasanha</li>
         </ul>
-        <figure class="figura">
-            <img class="amam" src="/fundamentos-web/img/lasanha.jpg" alt="Lasanha">
-            <figcaption>Gatos <i>amam</i> lasanhas</figcaption>
+        <figure class="fig">
+          <img
+            class="love"
+            src="/fundamentos-web/img/lasanha.jpg"
+            alt="Lasanha"
+          />
+          <figcaption>Gatos <i>amam</i> lasanhas</figcaption>
         </figure>
-    </section>
-    <section>
+        <br />
+      </section>
+      <section>
         <h2>Coisas que gatos <b>odeiam</b></h2>
         <ol>
-            <li>Tomar banho</li>
-            <li>Pepinos</li>
-            <li>OUTROS GATOS</li>
+          <li>Tomar banho</li>
+          <li>Pepinos</li>
+          <li>OUTROS GATOS</li>
         </ol>
-        <figure class="figura">
-            <img class="odeiam" src="/fundamentos-web/img/gatopepino.jpg" alt="Gato tomando susto de um pepino">
-            <figcaption>Gatos <i>odeiam</i> pepinos</figcaption>
+        <figure class="fig">
+          <img
+            class="hate"
+            src="/fundamentos-web/img/gatopepino.jpg"
+            alt="Gato tomando susto de um pepino"
+          />
+          <figcaption>Gatos <i>odeiam</i> pepinos</figcaption>
         </figure>
-    </section>
-
-
-</body>
-
+      </section>
+    </main>
+  </body>
 </html>

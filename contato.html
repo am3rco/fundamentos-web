@@ -1,36 +1,71 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-rYHRPxHG5hqYmF3q3qz5Q5PaQqg3IcX2P+nRLzDIsG/+OG+0rjHNcCXa78VTqb1+"
+      crossorigin="anonymous"
+    />
     <title>Formulário de Contato</title>
-</head>
+  </head>
 
-<body>
-
-    <form>
-        <header>
-            <h1 id="titulo">Gatos Folgados</h1>
-            <p id="descricao">Entre em contato com a gente enviando um email</p>
-        </header>
-        <div class="grupo">
-            <label for="nome"> Seu Nome</label>
-            <input name="nome" type="text" id="nome" required>
+  <body>
+    <header class="header">
+      <div id="navbar" class="navbar">
+        <ul class="links">
+          <li><a href="index.html" target="_blank" title>Página Inicial</a></li>
+          <li>
+            <a href="formulario.html" target="_blank"
+              >Questinário sobre o seu Gatinho</a
+            >
+          </li>
+          <li><a href="contato.html">Entre em Contato</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-cat"></i>
         </div>
-        <div class="grupo">
-            <label for="numero"> Telefone</label>
-            <input name="numero" type="text" id="numero" required>
-            <br>
-        </div>
-        <div class="grupo">
-            <label for="email"> Email</label>
-            <input name="email" type="email" id="email" required>
-            <br>
-        </div>
-    </form>
-
-</body>
-
+        <img
+          id="nyah"
+          src="/fundamentos-web/img/nyancat.gif"
+          alt="Imagem de um gato torrada num arco-iris"
+        />
+      </div>
+    </header>
+    <h1 id="titulo">Gatos Folgados</h1>
+    <p id="descricao">Entre em contato com a gente enviando um email</p>
+    <section class="contact-us">
+      <form action="#">
+        <label for="customerName">NOME <em>&#x2a;</em></label>
+        <input type="text" id="customerName" name="customerName" required="" />
+        <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+        <input
+          type="email"
+          id="customerEmail"
+          name="customerEmail"
+          required=""
+        />
+        <label for="customerPhone">TELEFONE</label>
+        <input
+          type="tel"
+          id="customerPhone"
+          name="customerPhone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+        />
+        <label for="customerNote">MENSAGEM <em>&#x2a;</em></label>
+        <textarea
+          rows="4"
+          id="customerNote"
+          name="customerNote"
+          required=""
+        ></textarea>
+        <h3>Please provide all the information about your issue you can.</h3>
+        <button id="customerOrder" type="submit">ENVIAR</button>
+      </form>
+    </section>
+  </body>
 </html>

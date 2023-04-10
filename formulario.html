@@ -1,57 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styless.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-rYHRPxHG5hqYmF3q3qz5Q5PaQqg3IcX2P+nRLzDIsG/+OG+0rjHNcCXa78VTqb1+"
+      crossorigin="anonymous"
+    />
     <title>QuestiGatos</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <header class="header">
+      <div id="navbar" class="navbar">
+        <ul class="links">
+          <li><a href="index.html" target="_blank" title>Página Inicial</a></li>
+          <li>
+            <a href="formulario.html" target="_blank"
+              >Questinário sobre o seu Gatinho</a
+            >
+          </li>
+          <li><a href="contato.html">Entre em Contato</a></li>
+        </ul>
+        <div class="icon">
+          <i class="fa-solid fa-cat"></i>
+        </div>
+        <img
+          id="nyah"
+          src="/fundamentos-web/img/nyancat.gif"
+          alt="Imagem de um gato torrada num arco-iris"
+        />
+      </div>
+    </header>
 
     <section>
-        <h2>Sobre o seu Gato:</h2>
-        <fieldset>
-            <legend>Sobre o seu gatinho</legend>
-            <label for="nome">Nome do seu gato:</label>
-            <input type="text" id="nome" name="nome" required>
+      <h2>Sobre o seu Gato:</h2>
+      <fieldset>
+        <legend>Sobre o seu gatinho</legend>
+        <label for="nome">Nome do seu gato:</label>
+        <input type="text" id="nome" name="nome" required />
 
-            <label for="idade">Idade do seu gato:</label>
-            <input type="number" id="idade" name="idade" min="0" max="30" required>
+        <label for="idade">Idade do seu gato:</label>
+        <input
+          type="number"
+          id="idade"
+          name="idade"
+          min="0"
+          max="30"
+          required
+        />
 
-            <label for="raca">Raça do seu gato:</label>
-            <input type="text" id="raca" name="raca" required>
+        <label for="raca">Raça do seu gato:</label>
+        <input type="text" id="raca" name="raca" required />
 
-            <label for="cor">Cor do seu gato:</label>
-            <input type="text" id="cor" name="cor" required>
+        <label for="cor">Cor do seu gato:</label>
+        <input type="text" id="cor" name="cor" required />
 
-            <label for="alimentacao">Qual a alimentação do seu gato?</label>
-            <select id="alimentacao" name="alimentacao" required>
-                <option value="">Selecione uma opção</option>
-                <option value="Ração seca">Ração seca</option>
-                <option value="Ração úmida">Ração úmida</option>
-                <option value="Ração caseira">Ração caseira</option>
-            </select>
-        </fieldset>
-        <fieldset>
-            <legend>Seu gato é mais de ficar em casa ou na rua?</legend>
-            <label for="casa"><input name="c" id="casa" type="radio" value="casa" checked>Casa</label>
-            <label for="rua"><input name="c" id="rua" type="radio" value="rua">Rua</label>
-        </fieldset>
-        <fieldset>
-            <legend>Qual a personalidade do seu gato?</legend>
-            <label for="amoroso"><input id="amoroso" type="checkbox" value="amoroso" name="a" checked> Amoroso</label>
-            <label for="maluquinho"><input id="maluquinho" type="checkbox" value="maluquinho" name="a">
-                Maluquinho</label>
-            <label for="preguiçoso"><input id="preguiçoso" type="checkbox" value="preguiçoso" name="a">
-                Preguiçoso</label>
-        </fieldset>
-        <input id="fotogato" type="text" placeholder="Link da foto do seu Gato">
-        <button type="submit">Enviar</button>
+        <label for="alimentacao">Qual a alimentação do seu gato?</label>
+        <select id="alimentacao" name="alimentacao" required>
+          <option value="">Selecione uma opção</option>
+          <option value="Ração seca">Ração seca</option>
+          <option value="Ração úmida">Ração úmida</option>
+          <option value="Ração caseira">Ração caseira</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <legend>Seu gato é mais de ficar em casa ou na rua?</legend>
+        <label for="casa"
+          ><input
+            name="c"
+            id="casa"
+            type="radio"
+            value="casa"
+            checked
+          />Casa</label
+        >
+        <label for="rua"
+          ><input name="c" id="rua" type="radio" value="rua" />Rua</label
+        >
+      </fieldset>
+      <fieldset>
+        <legend>Qual a personalidade do seu gato?</legend>
+        <label for="amoroso"
+          ><input
+            id="amoroso"
+            type="checkbox"
+            value="amoroso"
+            name="a"
+            checked
+          />
+          Amoroso</label
+        >
+        <label for="maluquinho"
+          ><input id="maluquinho" type="checkbox" value="maluquinho" name="a" />
+          Maluquinho</label
+        >
+        <label for="preguiçoso"
+          ><input id="preguiçoso" type="checkbox" value="preguiçoso" name="a" />
+          Preguiçoso</label
+        >
+      </fieldset>
+      <input id="fotogato" type="text" placeholder="Link da foto do seu Gato" />
+      <button type="submit">Enviar</button>
     </section>
-
-
-</body>
-
+  </body>
 </html>
