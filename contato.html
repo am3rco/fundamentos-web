@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="/fundamentos-web/assets/css/styless.css" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -31,7 +31,7 @@
         </div>
         <img
           id="nyah"
-          src="/fundamentos-web/img/nyancat.gif"
+          src="assets/img/nyancat.gif"
           alt="Imagem de um gato torrada num arco-iris"
         />
       </div>
@@ -40,32 +40,33 @@
     <p id="descricao">Entre em contato com a gente enviando um email</p>
     <section class="contact-us">
       <form action="#">
-        <label for="customerName">NOME <em>&#x2a;</em></label>
-        <input type="text" id="customerName" name="customerName" required="" />
-        <label for="customerEmail">EMAIL <em>&#x2a;</em></label>
+        <label for="nome">NOME <em>&#x2a;</em></label>
         <input
-          type="email"
-          id="customerEmail"
-          name="customerEmail"
+          type="text"
+          id="nome"
+          name="nome"
+          onkeyup='validName()'
           required=""
         />
-        <label for="customerPhone">TELEFONE</label>
+        <div id="txtNome"></div> 
+        <label for="email">EMAIL <em>&#x2a;</em></label>
+        <input type="email" id="email" name="email" onkeyup="validEmail()" required="" />
+        <div id="txtEmail"></div>
+        <label for="telefone">TELEFONE</label>
         <input
           type="tel"
-          id="customerPhone"
-          name="customerPhone"
+          id="telefone"
+          name="telefone"
           pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         />
-        <label for="customerNote">MENSAGEM <em>&#x2a;</em></label>
-        <textarea
-          rows="4"
-          id="customerNote"
-          name="customerNote"
-          required=""
-        ></textarea>
-        <h3>Please provide all the information about your issue you can.</h3>
-        <button id="customerOrder" type="submit">ENVIAR</button>
+        <div id="txtTelefone"></div>
+        <label for="mensagem">MENSAGEM <em>&#x2a;</em></label>
+        <textarea rows="4" id="mensagem" name="mensagem" onkeyup="validMensagem()" required=""></textarea>
+        <div class='txtMensagem'></div>
+        <h3>Mande qualquer dúvida ou sugestão para a gente.</h3>
+        <button onclick="enviar()" id="enviar" type="submit" >ENVIAR</button>
       </form>
     </section>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>

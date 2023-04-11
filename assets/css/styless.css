@@ -1,5 +1,7 @@
+/* Importa uma fonte do Google chamada Spartan */
 @import url("https://fonts.googleapis.com/css?family=Spartan&display=swap");
 
+/* Reseta todas as margins e paddings como 0 */
 * {
   margin: 0;
   padding: 0;
@@ -20,10 +22,12 @@ body {
   text-align: center;
 }
 
+/* Remove as bolinhas da listas */
 li {
   list-style: none;
 }
 
+/* Ele remove a decoração do texto sublinhado, define a cor do texto como preto e define o tamanho da fonte como 1rem. */
 a {
   text-decoration: none;
   color: black;
@@ -112,7 +116,7 @@ ol {
   border-top: 10px solid #f45702;
 }
 
-label,
+.contact-us label,
 input,
 textarea {
   display: block;
@@ -122,11 +126,15 @@ textarea {
   font-family: "Spartan";
 }
 
-input {
-  margin-bottom: 24pt;
+.contact-us input {
+  margin-bottom: 5pt;
 }
 
-h3 {
+.contact-us label {
+  margin-top: 5pt;
+}
+
+.contact-us h3 {
   font-weight: normal;
   font-size: 10pt;
   line-height: 24pt;
@@ -138,12 +146,12 @@ span {
   font-size: 8pt;
 }
 
-em {
+.contact-us em {
   color: #f45702;
   font-weight: bold;
 }
 
-input,
+.contact-us input,
 textarea {
   border: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
